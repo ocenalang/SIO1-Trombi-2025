@@ -1,0 +1,100 @@
+/* Style maximal pour l'élément #KUS */
+#KUS {
+    background: linear-gradient(135deg, #007BFF, #00D4FF, #7B68EE, #FF69B4);
+    background-size: 300% 300%;
+    animation: gradientShift 10s infinite;
+    border: 8px double rgba(255, 255, 255, 0.8);
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.6), 
+        0 0 30px rgba(0, 212, 255, 0.6), 
+        0 0 45px rgba(123, 104, 238, 0.6), 
+        0 0 60px rgba(255, 105, 180, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Animation du dégradé de fond */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Effets au survol de #KUS */
+#KUS:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 1), 
+        0 0 40px rgba(0, 212, 255, 1), 
+        0 0 60px rgba(123, 104, 238, 1), 
+        0 0 80px rgba(255, 105, 180, 1);
+}
+
+/* Texte animé au-dessus de l'élément #KUS */
+#KUS::before {
+    content: "✨ Bienvenue chez KUS ✨";
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(0, 255, 255, 0.8);
+    animation: textGlow 1.5s infinite alternate;
+}
+
+/* Animation de la brillance du texte */
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+    100% { text-shadow: 0 0 30px rgba(255, 255, 255, 1); }
+}
+
+#ENJALRIC {
+    background-color: #000000; 
+    border: 5px solid #b806fe; 
+}
+
+#ENJALRIC p {
+    color: #b806fe; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+#ENJALRIC img {
+    border-radius: 50%; 
+
+}
+#PAITRE-DALET {
+	background-color: blue;
+}
+#ALKAN
+{
+    
+    background-image: url('https://cdn.pixabay.com/animation/2022/09/03/07/35/07-35-06-414_512.gif');
+    
+
+    
+    border: 4px solid pink ;
+
+}
+
+#THOUVEREZ {
+	border-width: 3px;
+	border-radius: 10px;
+	background-color: orange;
+}
+
+#RETIERE {
+    background-color: blue;
+}
+ 
+#RETIERE p {
+    color: black;
+    text-align: center;
+}
