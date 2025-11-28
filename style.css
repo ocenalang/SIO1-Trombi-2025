@@ -1,13 +1,59 @@
-#EGEA{
-
-    .window {
-  border: 6px solid transparent;
-  border-radius: 10px;
-  background: #fff;
-  padding: 16px;
-
-  border-image: linear-gradient(45deg, #ff0066, #ffcc00, #33cc99, #0066ff) 1;
+#EGEA {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #1976d2, #42a5f5, #64b5f6, #2196f3) 1;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+#EGEA::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #0d47a1, #1976d2, #42a5f5, #64b5f6, #90caf9);
+  background-size: 300% 300%;
+  border-radius: 12px;
+  z-index: -1;
+  animation: gradient-border 4s ease infinite;
+}
+
+#EGEA:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.5);
+}
+
+#EGEA img {
+  transition: all 0.4s ease;
+  border-radius: 8px;
+}
+
+#EGEA:hover img {
+  transform: scale(1.08) rotate(2deg);
+  filter: brightness(1.1);
+}
+
+#EGEA p {
+  color: #0d47a1;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
